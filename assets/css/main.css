@@ -868,7 +868,7 @@ a:hover {
 }
 
 #log {
-  display: none;
+  display: block;
   position: absolute;
   width: 230px;
   height: 100px;

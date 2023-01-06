@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>메이플 선발대 심볼 - odium.kr</title>
+    <title>테스트서버</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <meta name="description" content="메이플스토리 선발대 정보 제공. 오디움 Odium" />
@@ -45,7 +45,7 @@
             </nav>
           </header>
         </div>
-        <header id="header">
+        <header id="header" class="middle">
           <nav>
             <ul>
               <li>
@@ -59,7 +59,7 @@
           <div id="log">
             <ul>
               <li style="color: yellow;">221222 웡스토랑 코인샵 x100 (미반영)</li>
-              <li>230104 웡스토랑 쿠폰 x80 (미반영)</li>
+              <li>230104 웡스토랑 쿠폰 x80 <button id="btn" onclick="historyAdd();"><div id="value">test</div></button></li>
             </ul>
           </div>
         </header>
@@ -79,6 +79,7 @@
     </div>
     <script src="mouseover.js"></script>
     <script src="symbol.js"></script>
+    <script src="localStorage.js"></script>
     <script>
       window.onload = function () {
         setValue();

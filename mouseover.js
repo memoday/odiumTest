@@ -7,5 +7,5 @@ odium.addEventListener("mouseover", function (event) {
 }, false);
 
 odium.addEventListener("mouseout", function (event) {
-    logStyle.display = "none";
+    logStyle.display = "block";
 }, false); 
