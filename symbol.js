@@ -1,5 +1,4 @@
-
-var coinShop = window.localStorage.getItem('coinShop');
+var coinShop = window.localStorage.getItem('coinShop') | 0;
 coinShop = parseInt(coinShop);
 // var settings = {
 //   fontSize: '11px',
@@ -14,10 +13,10 @@ coinShop = parseInt(coinShop);
 // console.log(settings.coinShop); //11px
 
 // coinShop = parseInt(settings.coinShop)
-testBool = window.localStorage.getItem('bool')
-var testBool = testBool == "true" ? true : false
-btnText = window.localStorage.getItem('btnText')
-document.getElementById('btn').textContent = btnText
+testBool = window.localStorage.getItem('bool') || false;
+var testBool = testBool == "true" ? true : false;
+btnText = window.localStorage.getItem('btnText');
+document.getElementById('btn').textContent = btnText;
 
 console.log(testBool)
 function historyAdd() {
@@ -26,26 +25,26 @@ function historyAdd() {
       console.log(testBool)
 
       if (testBool == true){
-        window.localStorage.setItem('bool',true)
-        console.log('testBool become true ',testBool)
+        window.localStorage.setItem('bool',true);
+        console.log('testBool become true ',testBool);
         window.localStorage.setItem('coinShop','100');
         window.localStorage.setItem('btnText','미반영')
         coinShop = window.localStorage.getItem('coinShop');
         coinShop = parseInt(coinShop);
         globalThis.coinShop;
         setValue();
-        document.getElementById('btn').textContent = '미반영'
+        document.getElementById('btn').textContent = '미반영';
       } 
       else {
-        window.localStorage.setItem('bool',false)
-        console.log('testBool become false ',testBool)
+        window.localStorage.setItem('bool',false);
+        console.log('testBool become false ',testBool);
         window.localStorage.setItem('coinShop','0');
-        window.localStorage.setItem('btnText','반영')
+        window.localStorage.setItem('btnText','반영');
         coinShop = window.localStorage.getItem('coinShop');
         coinShop = parseInt(coinShop);
         globalThis.coinShop;
         setValue();
-        document.getElementById('btn').textContent = '반영'
+        document.getElementById('btn').textContent = '반영';
       }
 
       console.log('Toggled bool is',
